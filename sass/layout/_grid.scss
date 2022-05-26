@@ -1,0 +1,17 @@
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+  background-color: #eee;
+  
+  &:not(:last-child){
+    margin-bottom: $gutter-horizontal;
+  }
+} 
+
+// .row:last-chaild() - simply selects just the last child and set the margin bottom to zero to that one but there is a better way. simply use the :not pseudo selector &:not(:last-child) this means (select everything except the last child element) so we put the margin-bottom on everything except the last child
+
+.col-1-of-2 {
+  width: calc()
+}
+
+
